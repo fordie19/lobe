@@ -27,6 +27,10 @@
                             color: $clr-grey;
                             text-decoration: none;
                             font-size: 1.5rem;
+                            &:hover{
+                                scale: 1.1;
+                                transition: 0.5s ease;
+                              }
                         }
                     }
                 }
@@ -50,6 +54,10 @@
                             color: $clr-grey;
                             text-decoration: none;
                             font-size: 1.5rem;
+                            &:hover{
+                                scale: 1.1;
+                                transition: 0.5s ease;
+                              }
                         }
                     }
                 }
@@ -73,6 +81,10 @@
                             text-decoration: none;
                             font-size: 1.5rem;
                             color: $clr-grey;
+                            &:hover{
+                                scale: 1.1;
+                                transition: 0.5s ease;
+                              }
                         }
                     }
                 }
@@ -89,6 +101,10 @@
                     padding: 1rem;
                     border-radius:3rem;
                     color: $clr-light;
+                    &:hover{
+                        scale: 1.1;
+                        transition: 0.5s ease;
+                      }
                 }
             }
             .copyright{
@@ -115,24 +131,30 @@
         }
         
     }
-    
+
     @include mediaQuery(1080px){
         &{
-            max-width: 110rem;
+            margin: 0 auto;
+            max-width: 105rem;
             &-wrapper{
                 .box{
                     gap:0.1rem;
                     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                     .copyright{
                         order:-1;
-                        z-index: unset;
                         position: relative;
                         bottom: 0;
                         margin-left: 0;
                         height: unset;
-                        
+                        bottom:10rem;
+                        img{
+                            margin-right:4rem;
+                            width:8rem;
+                        }
                         p{
                             font-size: 1.5rem;
+                            line-height: 2rem;
+                            margin-left:5rem;
                         }
                     }
                     .about{
@@ -143,7 +165,7 @@
                         gap:1rem;
                         margin-left: 5rem;
                         p{
-                            font-size:1.3rem;
+                            font-size:1.5rem;
                             font-weight: bold;
                         }
                         ul{
@@ -153,9 +175,13 @@
                             gap:1rem;
                             li{
                                 a{
-                                    color: $clr-dark;
+                                    color: $clr-grey;
                                     text-decoration: none;
                                     font-size:1.5rem;
+                                    &:hover{
+                                        scale: 1.1;
+                                        transition: 0.5s ease;
+                                      }
                                 }
                             }
                         }
@@ -177,9 +203,13 @@
                             gap:1rem;
                             li{
                                 a{
-                                    color: $clr-dark;
+                                    color: $clr-grey;
                                     text-decoration: none;
                                     font-size: 1.5rem;
+                                    &:hover{
+                                        scale: 1.1;
+                                        transition: 0.5s ease;
+                                      }
                                 }
                             }
                         }
@@ -201,25 +231,33 @@
                             gap:1rem;
                             li{
                                 a{
-                                    color: $clr-dark;
+                                    color: $clr-grey;
                                     text-decoration: none;
                                     font-size: 1.5rem;
+                                    &:hover{
+                                        scale: 1.1;
+                                        transition: 0.5s ease;
+                                      }
                                 }
                             }
                         }   
                     }
-                }
-            }
-    
-            .footer-icons{
-                
-                margin-bottom: 9rem;
-                gap: 2rem;
-                i{
-                    background: #04dbb2;
-                    padding: 0.8rem;
-                    border-radius:3rem;
-                    color: $clr-light;
+                    .footer-icons{ 
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-bottom: 19rem;
+                        i{
+                            background: #04dbb2;
+                            padding: 1rem;
+                            border-radius:3rem;
+                            color: $clr-light;
+                            &:hover{
+                                scale: 1.1;
+                                transition: 0.5s ease;
+                              }
+                        }
+                    }
                 }
             }
         }

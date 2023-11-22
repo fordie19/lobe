@@ -32,8 +32,12 @@
         gap:3rem;
         li {
           a {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: $clr-grey;
+            &:hover{
+              scale: 1.1;
+              transition: 0.5s ease;
+            }
           }
         }
       }
@@ -51,6 +55,10 @@
       text-align: center;
       font-weight: bold;
       padding:1rem 0;
+      &:hover{
+        scale: 1.1;
+        transition: 0.5s ease;
+      }
     }
     .header__btn{
       display:none;
@@ -81,7 +89,7 @@
       }
     }
     @include mediaQuery(1080px){
-      .header{
+      &{
         &__wrapper{
           justify-content: space-around;
           .header__nav{
@@ -101,7 +109,10 @@
               gap:5rem;
               li{
                 a{
-                  color: $clr-dark;
+                  color: $clr-grey;
+                  &:hover{
+                    color: $clr-dark;
+                  }
                 }
               }
             }
@@ -109,6 +120,10 @@
           .header__btn{
             display: block;
             background:#04dbb2;
+            &:hover{
+              scale: 1.1;
+              transition: 0.5s ease;
+            }
             a{
               color:white;
               font-size: 1.5rem;

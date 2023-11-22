@@ -169,8 +169,12 @@ body {
   gap: 3rem;
 }
 .header__nav ul li a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #767676;
+}
+.header__nav ul li a:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
 }
 .header__nav.open {
   opacity: 100%;
@@ -185,6 +189,10 @@ body {
   text-align: center;
   font-weight: bold;
   padding: 1rem 0;
+}
+.header .nav__btn:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
 }
 .header .header__btn {
   display: none;
@@ -213,10 +221,10 @@ body {
   transition: 0.5s ease;
 }
 @media screen and (min-width: 1080px) {
-  .header .header__wrapper {
+  .header__wrapper {
     justify-content: space-around;
   }
-  .header .header__wrapper .header__nav {
+  .header__wrapper .header__nav {
     z-index: 1;
     position: relative;
     opacity: 100%;
@@ -228,15 +236,18 @@ body {
     width: auto;
     background: transparent;
   }
-  .header .header__wrapper .header__nav ul {
+  .header__wrapper .header__nav ul {
     padding: 0;
     flex-direction: row;
     gap: 5rem;
   }
-  .header .header__wrapper .header__nav ul li a {
+  .header__wrapper .header__nav ul li a {
+    color: #767676;
+  }
+  .header__wrapper .header__nav ul li a:hover {
     color: #2b2b2b;
   }
-  .header .header__wrapper .header__btn {
+  .header__wrapper .header__btn {
     display: block;
     background: #04dbb2;
     border-radius: 40px;
@@ -244,13 +255,17 @@ body {
     font-weight: bold;
     padding: 1rem 0;
   }
-  .header .header__wrapper .header__btn a {
+  .header__wrapper .header__btn:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
+  }
+  .header__wrapper .header__btn a {
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1.5rem 2.2rem;
   }
-  .header .header__wrapper .burger__btn, .header .header__wrapper .nav__btn {
+  .header__wrapper .burger__btn, .header__wrapper .nav__btn {
     display: none;
   }
 }
@@ -287,6 +302,10 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
 }
+.footer-wrapper .box .about ul li a:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+}
 .footer-wrapper .box .general {
   display: flex;
   flex-direction: column;
@@ -307,6 +326,10 @@ body {
   color: #767676;
   text-decoration: none;
   font-size: 1.5rem;
+}
+.footer-wrapper .box .general ul li a:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
 }
 .footer-wrapper .box .resources {
   display: flex;
@@ -329,6 +352,10 @@ body {
   font-size: 1.5rem;
   color: #767676;
 }
+.footer-wrapper .box .resources ul li a:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+}
 .footer-wrapper .box .footer-icons {
   display: flex;
   flex-direction: column;
@@ -341,6 +368,10 @@ body {
   padding: 1rem;
   border-radius: 3rem;
   color: #ffffff;
+}
+.footer-wrapper .box .footer-icons i:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
 }
 .footer-wrapper .box .copyright {
   position: absolute;
@@ -365,7 +396,8 @@ body {
 }
 @media screen and (min-width: 1080px) {
   .footer {
-    max-width: 110rem;
+    margin: 0 auto;
+    max-width: 105rem;
   }
   .footer-wrapper .box {
     gap: 0.1rem;
@@ -373,14 +405,20 @@ body {
   }
   .footer-wrapper .box .copyright {
     order: -1;
-    z-index: unset;
     position: relative;
     bottom: 0;
     margin-left: 0;
     height: unset;
+    bottom: 10rem;
+  }
+  .footer-wrapper .box .copyright img {
+    margin-right: 4rem;
+    width: 8rem;
   }
   .footer-wrapper .box .copyright p {
     font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 5rem;
   }
   .footer-wrapper .box .about {
     margin-left: 5rem;
@@ -391,7 +429,7 @@ body {
     margin-left: 5rem;
   }
   .footer-wrapper .box .about p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
   .footer-wrapper .box .about ul {
@@ -401,9 +439,13 @@ body {
     gap: 1rem;
   }
   .footer-wrapper .box .about ul li a {
-    color: #2b2b2b;
+    color: #767676;
     text-decoration: none;
     font-size: 1.5rem;
+  }
+  .footer-wrapper .box .about ul li a:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
   }
   .footer-wrapper .box .general {
     display: flex;
@@ -422,9 +464,13 @@ body {
     gap: 1rem;
   }
   .footer-wrapper .box .general ul li a {
-    color: #2b2b2b;
+    color: #767676;
     text-decoration: none;
     font-size: 1.5rem;
+  }
+  .footer-wrapper .box .general ul li a:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
   }
   .footer-wrapper .box .resources {
     display: flex;
@@ -443,18 +489,28 @@ body {
     gap: 1rem;
   }
   .footer-wrapper .box .resources ul li a {
-    color: #2b2b2b;
+    color: #767676;
     text-decoration: none;
     font-size: 1.5rem;
   }
-  .footer .footer-icons {
-    margin-bottom: 9rem;
-    gap: 2rem;
+  .footer-wrapper .box .resources ul li a:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
   }
-  .footer .footer-icons i {
+  .footer-wrapper .box .footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 19rem;
+  }
+  .footer-wrapper .box .footer-icons i {
     background: #04dbb2;
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 3rem;
     color: #ffffff;
+  }
+  .footer-wrapper .box .footer-icons i:hover {
+    scale: 1.1;
+    transition: 0.5s ease;
   }
 }/*# sourceMappingURL=main.css.map */
